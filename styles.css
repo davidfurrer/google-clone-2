@@ -1,0 +1,39 @@
+* {
+    font-family: arial;
+}
+
+h1 {
+    text-shadow: 3px 3px 5px grey;
+    color: blue;
+    border: 2px solid rgb(14, 13, 13);
+    text-align: center;
+    background-color: lightblue;
+}
+
+p {
+    background-color: lightsalmon;
+    font-style: italic;
+    font-weight: 200;
+    font-family: arial;
+}
+
+input[type="text"] {
+    border: 2px solid rgb(218, 19, 19)
+}
+
+input[type="email"] {
+    border: 2px solid rgb(70, 197, 19)
+}
+
+input[type="button"] {
+    cursor: pointer;
+    transition: transform .7s ease-in-out;
+}
+
+input[type="button"]:hover {
+    transform: rotate(360deg);
+}
+
+#ty {
+    padding: 20px 20px 20px 20px;
+}

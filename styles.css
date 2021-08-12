@@ -1,39 +1,94 @@
 * {
-    font-family: arial;
-}
-
-h1 {
-    text-shadow: 3px 3px 5px grey;
-    color: blue;
-    border: 2px solid rgb(14, 13, 13);
-    text-align: center;
-    background-color: lightblue;
-}
-
-p {
-    background-color: lightsalmon;
-    font-style: italic;
-    font-weight: 200;
-    font-family: arial;
-}
-
-input[type="text"] {
-    border: 2px solid rgb(218, 19, 19)
-}
-
-input[type="email"] {
-    border: 2px solid rgb(70, 197, 19)
-}
-
-input[type="button"] {
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Verdana;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+  }
+  
+  .header a {
+    margin-right: 20px;
+    text-decoration: inherit;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+  }
+  
+  .header a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  .header_right {
+    display: flex;
+    margin-left: auto;
+    min-width: 13vw;
+    justify-content: space-between;
+  }
+  
+  .header_right .header_apps {
+    margin-right: 10px;
+  }
+  
+  
+  .mainBody {
+    flex: 1;
+    display: flex;
+    margin-top: 12%;
+    flex-direction: column;
+  }
+  
+  .mainBody img {
+    object-fit: contain;
+    height: 100px;
+  }
+  
+  .search_input {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 560px;
+  }
+  
+  .search_input input {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+  }
+  
+  .search_input .material-icons {
+    color: gray;
+  }
+  
+  .search_buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search_buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    outline: none;
+    border: none;
     cursor: pointer;
-    transition: transform .7s ease-in-out;
-}
+  }
 
-input[type="button"]:hover {
-    transform: rotate(360deg);
-}
-
-#ty {
-    padding: 20px 20px 20px 20px;
-}
